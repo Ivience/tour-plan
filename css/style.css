@@ -472,6 +472,7 @@ template {
 }
 
 .user__name {
+  margin-top: 5px;
   margin-left: 18px;
   font-size: 14px;
   line-height: 18px;
@@ -496,11 +497,10 @@ template {
     padding-bottom: 30px;
   }
   .navbar__search {
-    margin-left: auto;
+    margin-left: 48px;
   }
   .navbar-menu {
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding: 22px 14px;
   }
   .navbar-menu__link {
     font-size: 12px;
@@ -514,10 +514,14 @@ template {
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
-    width: 92%;
+    width: 88%;
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
+  }
+  .navbar-top {
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
   .menu-button {
     display: -webkit-box;
