@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   color: #333333;
   background-color: #F5FAFE;
 }
@@ -395,7 +395,7 @@ template {
 .navbar-menu {
   list-style-type: none;
   margin: 0;
-  padding: 32px 0px 29px 0px;
+  padding: 30px 0px 31px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -473,7 +473,7 @@ template {
 }
 
 .user__name {
-  margin-top: 5px;
+  margin-top: 2px;
   margin-left: 18px;
   font-size: 14px;
   line-height: 18px;
@@ -526,11 +526,11 @@ template {
 
 .hotel-info__offer {
   margin-left: 14px;
-  margin-top: 2px;
+  margin-top: 4px;
 }
 
 .hotel-info__name {
-  margin-top: 6px;
+  margin-top: 3px;
   margin-bottom: 0;
 }
 
@@ -574,7 +574,7 @@ template {
 .offer {
   font-size: 10px;
   line-height: 13px;
-  padding: 3px 10px;
+  padding: 4px 10px 3px 10px;
   background-color: #EC1F46;
   border-radius: 3px;
   color: #fff;
@@ -583,8 +583,8 @@ template {
 .rating {
   max-width: 65px;
   min-height: 45px;
-  margin-bottom: 6px;
-  padding-top: 4px;
+  margin-bottom: 4px;
+  padding-top: 2px;
   text-align: center;
   color: #fff;
   background-color: #EC1F46;
@@ -599,6 +599,11 @@ template {
 .rating__counter {
   font-size: 14px;
   line-height: 18px;
+}
+
+.rating__counter::after {
+  content: "5";
+  font-size: 10px;
 }
 
 @media (max-width: 1200px) {
@@ -622,7 +627,7 @@ template {
     margin-left: 48px;
   }
   .navbar-menu {
-    padding: 22px 14px 20px 14px;
+    padding: 19px 14px 23px 14px;
   }
   .navbar-menu__link {
     font-size: 12px;
@@ -632,7 +637,7 @@ template {
     width: 340px;
   }
   .rating {
-    margin-bottom: 5px;
+    margin-bottom: 1px;
   }
 }
 
@@ -645,8 +650,8 @@ template {
     display: none;
   }
   .navbar-top {
-    padding-top: 25px;
-    padding-bottom: 27px;
+    padding-top: 24px;
+    padding-bottom: 28px;
   }
   .menu-button {
     display: -webkit-box;
@@ -695,7 +700,7 @@ template {
     width: 100%;
   }
   .hotel-info__name {
-    margin-top: 13px;
+    margin-top: 10px;
     margin-bottom: 0;
   }
   .hotel-info__rating {
