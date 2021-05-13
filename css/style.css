@@ -891,8 +891,12 @@ template {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .offer {
+    padding: 4px 9px 3px 9px;
+  }
   .booking {
     width: 340px;
+    padding: 29px 22px 22px 23px;
   }
   .map {
     width: 340px;
@@ -953,6 +957,9 @@ template {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .hotel-info {
+    padding-bottom: 38px;
   }
   .hotel-info__text {
     width: 100%;
