@@ -49,9 +49,22 @@
   .newsletter
     padding: 72px 0 73px 0
   .reviews
+    padding: 15px 0 70px 0
     &-slider
       &__item
+        padding: 0 59px 30px 64px
         max-width: 580px
+      &__button
+        top: 50%
+        &--prev
+          left: 0
+        &--next
+          right: 0
+    &-title
+      font-size: 30px
+      line-height: 38px
+    &__title
+      margin-bottom: 50px
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -141,20 +154,31 @@
   .subscribe__input
     padding-left: 21px
   .reviews
+    padding: 25px 0 70px 0
+    &-title
+      font-size: 18px
+      line-height: 23px
+    &__title
+      padding: 0 10px 0 10px
+      margin-bottom: 41px
     &-slider
       &__item
-        padding: 0 30px 30px
+        padding: 0 30px 36px 32px
         &:after, &:before
           display: none
+      &__profile
+        margin-right: 6px
+      &__text
+        text-align: left
       &__button
         top: 32px
         &--prev
           left: 50%
-          margin-left: -65px
+          margin-left: -92px
           transform: translate(-50%, 0)
         &--next
           right: 50%
-          margin-right: -65px
+          margin-right: -88px
           transform: translate(50%, 0)
 @media (max-width: 576px)
   .logo
