@@ -83,6 +83,7 @@
     padding: 24px 107px 24px 27px
   .footer
     padding-top: 72px
+    padding-bottom: 25px
     &-wrapper
       grid-template-columns: 188px 311px 40px 1fr
       grid-row-gap: 50px
@@ -119,6 +120,10 @@
         padding-top: 6px
         grid-column: span 3
         grid-row: 4
+    &__bottom
+      padding: 5px 0 0 0px
+      grid-column: 1 / 5
+      
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -314,6 +319,10 @@
       margin-bottom: 15px
     &__button
       order: 2
+  .footer
+    &__bottom
+      flex-wrap: wrap
+
     
 @media (max-width: 576px)
   .logo
@@ -329,6 +338,16 @@
     width: 100%
   .card
     width: 100%
+  .footer
+    padding-bottom: 21px
+    &__bottom
+      flex-wrap: wrap
+      &-links
+        margin-bottom: 9px
+        min-width: 276px
+      &-img
+        &-wrapper
+          flex-basis: 100%
     
 @media (max-width: 335px)
   .footer
