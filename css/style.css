@@ -1729,7 +1729,7 @@ template {
   body {
     padding-top: 70px;
   }
-  .navbar__mobile_fixed {
+  .navbar--mobile_fixed {
     position: fixed;
     top: 0;
     left: 0;
