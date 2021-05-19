@@ -1108,7 +1108,7 @@ template {
 
 .reviews-slider__text {
   max-width: 533px;
-  max-height: 130px;
+  max-height: 135px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1318,6 +1318,21 @@ template {
   margin: 0 0 25px -4px;
 }
 
+.footer__contact-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__contact-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .footer__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1422,6 +1437,7 @@ template {
   background-color: #EC1F46;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .footer__info {
@@ -1565,7 +1581,7 @@ template {
     padding: 15px 0 70px 0;
   }
   .reviews-slider__item {
-    padding: 0 59px 30px 64px;
+    padding: 0 63px 30px 64px;
     max-width: 580px;
   }
   .reviews-slider__button {
@@ -1585,7 +1601,7 @@ template {
     margin-bottom: 50px;
   }
   .activities {
-    padding: 29px 0 53px 0;
+    padding: 29px 0 50px 0;
   }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
