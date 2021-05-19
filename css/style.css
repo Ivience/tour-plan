@@ -454,15 +454,6 @@ template {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-}
-
-.navbar-menu__link:hover {
-  border-bottom: 1px solid #EC1F46;
-  border-top: 1px solid #EC1F46;
-  -webkit-box-shadow: 3px 3px #980d27, -3px -3px #f47d94;
-          box-shadow: 3px 3px #980d27, -3px -3px #f47d94;
 }
 
 .navbar-menu__item_mobile_visible {
@@ -564,10 +555,6 @@ template {
 .breadcrumb-list__link {
   text-decoration: none;
   color: inherit;
-}
-
-.breadcrumb-list__link:hover {
-  border-bottom: 1px solid #797979;
 }
 
 .hotel {
@@ -1517,6 +1504,23 @@ template {
   height: 22px;
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .navbar-menu__link:hover {
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    border-bottom: 1px solid #EC1F46;
+    border-top: 1px solid #EC1F46;
+    -webkit-box-shadow: 3px 3px #980d27, -3px -3px #f47d94;
+            box-shadow: 3px 3px #980d27, -3px -3px #f47d94;
+  }
+  .breadcrumb-list__link:hover {
+    border-bottom: 1px solid #797979;
+  }
+  .footer__contact-link:hover {
+    border-bottom: 1px solid #797979;
+  }
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1765,6 +1769,7 @@ template {
     bottom: 0;
     top: 71px;
     padding-top: 12px;
+    overflow: auto;
   }
   .navbar-bottom--visible {
     display: block;

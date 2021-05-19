@@ -1,3 +1,22 @@
+@media(hover: hover) and (pointer: fine)
+  .navbar  
+    &-menu
+      &__link
+        &:hover
+          transition: .5s ease-in-out
+          border-bottom: 1px solid $primary
+          border-top: 1px solid $primary
+          box-shadow: 3px 3px darken($primary, 20%), -3px -3px lighten($primary, 20%)
+  .breadcrumb
+    &-list
+      &__link
+        &:hover
+          border-bottom: 1px solid #797979
+  .footer
+    &__contact
+      &-link
+        &:hover
+          border-bottom: 1px solid #797979
 @media (max-width: 1200px)
   .container
     max-width: 960px
@@ -158,6 +177,7 @@
       bottom: 0
       top: 71px
       padding-top: 12px
+      overflow: auto
       &--visible
         display: block
     &-menu
