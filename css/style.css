@@ -908,9 +908,9 @@ template {
   display: grid;
   -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  -ms-grid-rows: min-content;
-      grid-template-rows: -webkit-min-content;
-      grid-template-rows: min-content;
+  -ms-grid-rows: 500px min-content;
+      grid-template-rows: 500px -webkit-min-content;
+      grid-template-rows: 500px min-content;
   grid-gap: 30px;
 }
 
@@ -931,10 +931,17 @@ template {
 
 .packages-card__info {
   padding: 25px 21px 24px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .packages-card__info--big {
-  padding: 45px 21px 10px 44px;
+  padding: 45px 21px 24px 44px;
 }
 
 .packages-card__rating {
@@ -956,7 +963,7 @@ template {
 
 .packages-card__img-wrapper--big {
   width: 50%;
-  height: 500px;
+  height: 100%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -980,7 +987,6 @@ template {
   font-size: 14px;
   line-height: 160.6%;
   margin-bottom: 34px;
-  max-height: 155px;
   overflow: auto;
 }
 
@@ -1067,6 +1073,12 @@ template {
   background-color: #EC1F46;
   cursor: pointer;
   margin-top: 19px;
+}
+
+.packages-card__button:hover {
+  background-color: #980d27;
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s;
 }
 
 .packages__card--big {
@@ -1668,6 +1680,12 @@ template {
   cursor: pointer;
 }
 
+.footer__button:hover {
+  background-color: #980d27;
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s;
+}
+
 .footer__info {
   font-style: normal;
   font-weight: bold;
@@ -1733,7 +1751,13 @@ template {
   .breadcrumb-list__link:hover {
     border-bottom: 1px solid #797979;
   }
+  .footer__link:hover {
+    border-bottom: 1px solid #797979;
+  }
   .footer__contact-link:hover {
+    border-bottom: 1px solid #797979;
+  }
+  .footer__bottom-link:hover {
     border-bottom: 1px solid #797979;
   }
 }
@@ -2366,6 +2390,9 @@ template {
   .packages-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    -ms-grid-rows: min-content;
+        grid-template-rows: -webkit-min-content;
+        grid-template-rows: min-content;
   }
   .packages-card__img-wrapper {
     height: 172px;

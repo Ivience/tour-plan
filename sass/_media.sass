@@ -1,5 +1,5 @@
 @media(hover: hover) and (pointer: fine)
-  .navbar  
+  .navbar
     &-menu
       &__link
         &:hover
@@ -13,10 +13,18 @@
         &:hover
           border-bottom: 1px solid #797979
   .footer
+    &__link
+      &:hover
+        border-bottom: 1px solid #797979
     &__contact
       &-link
         &:hover
           border-bottom: 1px solid #797979
+    &__bottom
+      &-link
+        &:hover
+          border-bottom: 1px solid #797979
+
 @media (max-width: 1200px)
   .container
     max-width: 960px
@@ -150,7 +158,7 @@
     &__bottom
       padding: 5px 0 0 0px
       grid-column: 1 / 5
-      
+
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -423,7 +431,6 @@
     &__bottom
       flex-wrap: wrap
 
-    
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -436,7 +443,8 @@
       margin-bottom: 37px
   .packages
     &-wrapper
-      grid-template-columns: 1fr 
+      grid-template-columns: 1fr
+      grid-template-rows: min-content
     &-card
       &__img
         &-wrapper
@@ -450,7 +458,7 @@
     &__card
       &--big
         grid-column: 1 / 2
-        flex-direction: column 
+        flex-direction: column
   .subscribe
     width: 100%
   .card
@@ -470,4 +478,3 @@
     &__title
       &--inline
         margin: 0 43px 21px 0
-  
