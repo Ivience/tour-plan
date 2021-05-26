@@ -43,7 +43,8 @@
     height: 230px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -124,7 +125,8 @@
       grid-row-gap: 50px
       grid-column-gap: 0
     &__input
-      flex-basis: 47%
+      &-group
+        flex-basis: 47%
     &__logo
       width: 96px
       grid-row: 1 / 2
@@ -158,6 +160,9 @@
     &__bottom
       padding: 5px 0 0 0px
       grid-column: 1 / 5
+  .modal
+    &__dialog
+      top: 50%
 
 @media (max-width: 767px)
   .container
@@ -418,7 +423,8 @@
         grid-row: 7
         grid-column: 1
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__message
       margin-bottom: 15px
     &__info
@@ -427,7 +433,6 @@
       margin-bottom: 15px
     &__button
       order: 2
-  .footer
     &__bottom
       flex-wrap: wrap
 
@@ -475,7 +480,6 @@
           flex-basis: 100%
   .modal
     &__dialog
-      top: 37%
       width: 90%
       padding: 22px 12px 29px 12px
 @media (max-width: 335px)

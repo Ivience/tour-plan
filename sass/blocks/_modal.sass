@@ -18,6 +18,8 @@
     top: 44%
     left: 50%
     width: 478px
+    max-height: 100%
+    overflow: auto
     padding: 22px 88px 29px 88px
     background-color: $dark
     transform: translate(-50%, -50%)
@@ -47,7 +49,7 @@
     margin-bottom: 17px
   &__input
     width: 100%
-    margin-bottom: 15px
+    margin-top: 15px
     font-style: normal
     font-weight: normal
     font-size: 12px
@@ -55,11 +57,13 @@
   &__message
     width: 100%
     min-height: 123px
-    margin-bottom: 15px
+    margin-top: 15px
     font-style: normal
     font-weight: normal
     font-size: 12px
     line-height: 15px
+  &__button
+    margin-top: 15px
   &__info
     font-style: normal
     font-weight: bold
