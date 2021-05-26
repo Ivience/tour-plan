@@ -91,8 +91,7 @@ textarea::placeholder {
 
 .invalid {
   color: #EC1F46;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  border-bottom: 1px solid #EC1F46;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1694,6 +1693,17 @@ template {
   color: #BDBDBD;
 }
 
+.footer__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
 .footer__input {
   width: 100%;
 }
@@ -1927,6 +1937,10 @@ template {
   .card {
     width: 230px;
     height: 230px;
+  }
+  .footer__inputs {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .footer__input-group {
     -ms-flex-preferred-size: 100%;

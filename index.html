@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
@@ -17,7 +18,12 @@
     <header class="navbar navbar--mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="index.html" class="logo">
+          <a
+            href="index.html"
+            class="logo"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -27,6 +33,8 @@
           <form
             action="#"
             class="search navbar__search navbar__search_mobile_hidden"
+            data-aos="fade-right"
+            data-aos-delay="200"
           >
             <input
               type="text"
@@ -37,7 +45,12 @@
               <img src="img/search.svg" alt="Icon: search" />
             </button>
           </form>
-          <a href="#" class="user navbar__user navbar__user_mobile_hidden">
+          <a
+            href="#"
+            class="user navbar__user navbar__user_mobile_hidden"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -734,7 +747,11 @@
       <div class="container">
         <h2 class="activities-title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card activities__card-1">
+          <div
+            class="card activities__card activities__card-1"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <img
               src="img/activity-1.jpg"
               alt="The curious corner of chamarel"
@@ -743,7 +760,11 @@
             <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
-          <div class="card activities__card activities__card-2">
+          <div
+            class="card activities__card activities__card-2"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img
               src="img/activity-2.jpg"
               alt="Gymkhana club golf course"
@@ -752,7 +773,11 @@
             <h3 class="card__title">Gymkhana club golf course</h3>
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
-          <div class="card activities__card activities__card-3">
+          <div
+            class="card activities__card activities__card-3"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <img
               src="img/activity-3.jpg"
               alt="Tamarind falls hiking trip - full day"
@@ -763,7 +788,11 @@
             </h3>
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
-          <div class="card activities__card activities__card-4">
+          <div
+            class="card activities__card activities__card-4"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
             <img
               src="img/activity-4.jpg"
               alt="The blue marine discovery quest"
@@ -960,24 +989,27 @@
               Send us a message
             </h3>
             <form action="send.php" method="POST" class="form footer__form">
-              <div class="footer__input-group">
-                <input
-                  type="text"
-                  class="input footer__input"
-                  placeholder="Your Full Name*"
-                  name="name"
-                  required
-                  minlength="2"
-                />
-              </div>
-              <div class="footer__input-group">
-                <input
-                  type="tel"
-                  class="input footer__input"
-                  placeholder="Phone Number*"
-                  name="phone"
-                  required
-                />
+              <div class="footer__inputs">
+                <div class="footer__input-group">
+                  <input
+                    type="text"
+                    class="input footer__input"
+                    placeholder="Your Full Name*"
+                    name="name"
+                    required
+                    minlength="2"
+                  />
+                </div>
+                <div class="footer__input-group">
+                  <input
+                    type="tel"
+                    class="input footer__input"
+                    placeholder="Phone Number*"
+                    name="phone"
+                    required
+                    minlength="18"
+                  />
+                </div>
               </div>
               <textarea
                 class="message footer__message"
@@ -1033,6 +1065,7 @@
             placeholder="Phone Number*"
             name="phone"
             required
+            minlength="18"
           />
           <input
             type="email"
@@ -1058,6 +1091,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

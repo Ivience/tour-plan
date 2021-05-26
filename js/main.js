@@ -64,15 +64,16 @@ $(document).ready(function () {
     errorClass: "invalid",
     messages: {
       name: {
-        required: "Please specify your name",
+        required: "Please enter your name",
         minlength: "Name must be at least 2 letters long",
       },
       email: {
-        required: "We need your email address to contact you",
+        required: "Please enter your email",
         email: "Your email address must be in the format of name@domain.com"
       },
         phone: {
-          required: "We need your phone to contact you"
+          required: "Please enter your phone",
+          minlength: "Format: +7 (999) 999-99-99"
         },
       },
     });
@@ -89,4 +90,5 @@ $(document).ready(function () {
     },
   };
   $("input[name='phone']").mask("+7 (999) 999-99-99", customOptions);
+  AOS.init();
 });
